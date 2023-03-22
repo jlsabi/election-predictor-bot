@@ -17,9 +17,9 @@ instagram_posts = get_instagram_posts(query, INSTAGRAM_ACCESS_TOKEN)
 
 all_posts = tweets + facebook_posts + instagram_posts
 posts_df = create_dataframe(all_posts)
-
-candidate1 = 'John Doe'
-candidate2 = 'Jane Smith'
+#make sure to edit the candidate11 and candidate22
+candidate1 = 'candidate11'
+candidate2 = 'candidate22'
 
 prediction = predict_election(posts_df, candidate1, candidate2)
 print(prediction)
